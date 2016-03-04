@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">鑫儿</string>
+    <string name="action_settings">设置</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_setting">设置</string>
+    
+    <!--连接校园网页面翻译-->
+    <string name="CampusNetAccount">校园网账号</string>
+    <string name="CampusNetPassword">校园网密码</string>
+    <string name="LoginCampusNet">登陆校园网</string>
+    <string name="RememberAccount">记住账号</string>
+    <string name="RememberPassword">记住密码</string>
+    <string name="SuccessfulConnected">连接成功</string>
+    <string name="FailToConnect">连接失败</string>
+    <string name="OneKeyConnect">一键连接</string>
+    <string name="WrongPassword">密码错误</string>
+    <string name="UnableToConnect">连接失败</string>
+    <string name="TooManyConnections">超过预设连接数</string>
+    <string name="AccountPasswordCantBeNull">请补全账号密码</string>
+    <string name="Overtime">网络君不给力哦~</string>
+    <string name="SuccessfullyConnected">连接成功</string>
+    <string name="ConnectionExist">已有网络连接</string>
+    <string name="ConnectionOvertime">一定是脸太大把信号挡住了</string>
+    <string name="ConnectingPleaseWait">臣妾正在拼命连接中&gt;_&lt;!!</string>
+    <string name="OK">朕知道了</string>
+    <string name="This">本宫要这个</string>
+    <string name="CancelConnection">本宫不想连了</string>
+
+    <!--设置界面翻译-->
+    <string name="HotConnect">自动连接</string>
+    <string name="HotConnectHint">启动时自动连接校园网</string>
+    <string name="Timeout">超时时间</string>
+    <string name="TimeoutHint">连接网络的尝试时间</string>
+    <string name="Theme">主题</string>
+    <string name="ThemeHint">界面样式和图案</string>
+    <string name="ChooseTheme">主题</string>
+    <string name="HelloKitty">HelloKitty 粉红色</string>
+    <string name="Doraemon">Doraemon 天蓝色</string>
+    <string name="SpongeBob">SpongeBob 黄色</string>
+    <string name="Cancel">取消</string>
+
+<!--
+    &lt;!&ndash;连接校园网页面翻译&ndash;&gt;
+    <string name="CampusNetAccount">校园网账号</string>
+    <string name="CampusNetPassword">校园网密码</string>
+    <string name="LoginCampusNet">登陆校园网</string>
+    <string name="RememberAccount">记住账号</string>
+    <string name="RememberPassword">记住密码</string>
+    <string name="SuccessfulConnected">连接成功</string>
+    <string name="FailToConnect">连接失败</string>
+    <string name="OneKeyConnect">一键连接</string>
+    <string name="WrongPassword">密码错误</string>
+    <string name="UnableToConnect">连接失败</string>
+    <string name="TooManyConnections">超过预设连接数</string>
+    <string name="AccountPasswordCantBeNull">请补全账号密码</string>
+    <string name="Overtime">网络君不给力哦~</string>
+    <string name="SuccessfullyConnected">连接成功</string>
+    <string name="ConnectionExist">已有网络连接</string>
+    <string name="ConnectionOvertime">检查网络连接后重试</string>
+    <string name="ConnectingPleaseWait">正在拼命连接中&gt;_&lt;!!</string>
+
+    &lt;!&ndash;设置界面翻译&ndash;&gt;
+    <string name="HotConnect">自动连接</string>
+    <string name="HotConnectHint">启动时自动连接校园网</string>
+    <string name="Timeout">超时时间</string>
+    <string name="TimeoutHint">连接网络的尝试时间</string>-->
+</resources>

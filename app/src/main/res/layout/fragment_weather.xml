@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity$PlaceholderFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="56dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/shenyang_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="1dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shenyang_top_group"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/shenyang_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="沈阳"
+                    android:padding="0dp"
+                    android:textSize="18sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/shenyang_temp_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="72sp"
+                    android:padding="8dp"
+                    android:layout_below="@+id/shenyang_textview"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="18dp"
+                    android:textSize="24sp"
+                    android:layout_alignTop="@id/shenyang_temp_textview"
+                    android:layout_toRightOf="@+id/shenyang_temp_textview"
+                    android:text="℃" />
+
+                <TextView
+                    android:id="@+id/shenyang_ganmao_textview"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:layout_height="wrap_content"
+                    android:text="正在获取"
+                    android:layout_below="@+id/shenyang_weather_textview"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/shenyang_weather_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="等一下"
+                    android:layout_below="@+id/shenyang_temp_textview"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shenyang_bottom_group"
+                android:layout_below="@+id/shenyang_top_group">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:id="@+id/shenyang_today_group">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7号星期八"
+                        android:id="@+id/shenyang_today_detial_textview"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/shenyang_today_detial_textview"
+                        android:text="大雪"
+                        android:id="@+id/shenyang_today_weather_textview"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:touchscreenBlocksFocus="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/shenyang_today_temp_high_textview"
+                            android:layout_toLeftOf="@+id/shenyang_today_temp_low_textview"
+                            android:layout_marginRight="16dp"
+                            android:text="0"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/shenyang_today_temp_low_textview"
+                            android:layout_alignParentRight="true"
+                            android:text="-10"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/shenyang_today_fengli_value_textview"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/shenyang_today_temp_low_textview"
+                            android:text="微风级"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/shenyang_today_group"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin_small"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_small"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:id="@+id/shenyang_tomorrow_group"
+                    android:layout_below="@+id/shenyang_today_group">
+                   <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8号星期九"
+                        android:id="@+id/shenyang_tomorrow_detial_textview"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/shenyang_tomorrow_detial_textview"
+                        android:text="大雪"
+                        android:id="@+id/shenyang_tomorrow_weather_textview"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:touchscreenBlocksFocus="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/shenyang_tomorrow_temp_high_textview"
+                            android:layout_toLeftOf="@+id/shenyang_tomorrow_temp_low_textview"
+                            android:layout_marginRight="16dp"
+                            android:text="0"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/shenyang_tomorrow_temp_low_textview"
+                            android:layout_alignParentRight="true"
+                            android:text="-10"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/shenyang_tomorrow_fengli_value_textview"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/shenyang_tomorrow_temp_low_textview"
+                            android:text="微风级"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/shenyang_tomorrow_group"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin_small"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_small"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="8dp"
+                    android:layout_below="@+id/shenyang_tomorrow_group">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9号星期十"
+                        android:id="@+id/shenyang_afterTomorrow_detial_textview"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/shenyang_afterTomorrow_detial_textview"
+                        android:text="大雪"
+                        android:id="@+id/shenyang_afterTomorrow_weather_textview"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:touchscreenBlocksFocus="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/shenyang_afterTomorrow_temp_high_textview"
+                            android:layout_toLeftOf="@+id/shenyang_afterTomorrow_temp_low_textview"
+                            android:layout_marginRight="16dp"
+                            android:text="0"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/shenyang_afterTomorrow_temp_low_textview"
+                            android:layout_alignParentRight="true"
+                            android:text="-10"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/shenyang_afterTomorrow_fengli_value_textview"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/shenyang_afterTomorrow_temp_low_textview"
+                            android:text="微风级"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/datong_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="1dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        android:layout_below="@id/shenyang_cardview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/datong_top_group"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/datong_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大同"
+                    android:padding="0dp"
+                    android:textSize="18sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/datong_temp_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:padding="8dp"
+                    android:textSize="72sp"
+                    android:layout_below="@+id/datong_textview"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="18dp"
+                    android:textSize="24sp"
+                    android:layout_alignTop="@id/datong_temp_textview"
+                    android:layout_toRightOf="@+id/datong_temp_textview"
+                    android:text="℃" />
+
+                <TextView
+                    android:id="@+id/datong_ganmao_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="正在获取"
+                    android:layout_below="@+id/datong_weather_textview"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/datong_weather_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="等一下"
+                    android:layout_below="@+id/datong_temp_textview"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/datong_bottom_group"
+                android:layout_below="@+id/datong_top_group">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:id="@+id/datong_today_group">
+                   <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7号星期八"
+                        android:id="@+id/datong_today_detial_textview"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/datong_today_detial_textview"
+                        android:text="大雪"
+                        android:id="@+id/datong_today_weather_textview"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:touchscreenBlocksFocus="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/datong_today_temp_high_textview"
+                            android:layout_toLeftOf="@+id/datong_today_temp_low_textview"
+                            android:layout_marginRight="16dp"
+                            android:text="0"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/datong_today_temp_low_textview"
+                            android:layout_alignParentRight="true"
+                            android:text="-10"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/datong_today_fengli_value_textview"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/datong_today_temp_low_textview"
+                            android:text="微风级"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/datong_today_group"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin_small"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_small"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:id="@+id/datong_tomorrow_group"
+                    android:layout_below="@id/datong_today_group">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8号星期九"
+                        android:id="@+id/datong_tomorrow_detial_textview"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/datong_tomorrow_detial_textview"
+                        android:text="大雪"
+                        android:id="@+id/datong_tomorrow_weather_textview"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:touchscreenBlocksFocus="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/datong_tomorrow_temp_high_textview"
+                            android:layout_toLeftOf="@+id/datong_tomorrow_temp_low_textview"
+                            android:layout_marginRight="16dp"
+                            android:text="0"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/datong_tomorrow_temp_low_textview"
+                            android:layout_alignParentRight="true"
+                            android:text="-10"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/datong_tomorrow_fengli_value_textview"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/datong_tomorrow_temp_low_textview"
+                            android:text="微风级"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/datong_tomorrow_group"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin_small"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_small"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="16dp"
+                    android:layout_below="@id/datong_tomorrow_group">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9号星期十"
+                        android:id="@+id/datong_afterTomorrow_detial_textview"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/datong_afterTomorrow_detial_textview"
+                        android:text="大雪"
+                        android:id="@+id/datong_afterTomorrow_weather_textview"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:touchscreenBlocksFocus="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/datong_afterTomorrow_temp_high_textview"
+                            android:layout_toLeftOf="@+id/datong_afterTomorrow_temp_low_textview"
+                            android:layout_marginRight="16dp"
+                            android:text="0"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/datong_afterTomorrow_temp_low_textview"
+                            android:layout_alignParentRight="true"
+                            android:text="-10"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/datong_afterTomorrow_fengli_value_textview"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/datong_afterTomorrow_temp_low_textview"
+                            android:text="微风级"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
